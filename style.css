@@ -1,0 +1,90 @@
+main {
+    font-family: 'Georgia', serif;
+    background-color: #A8D0E6;
+}
+
+/* Estilo general para el formulario de contacto */
+#contact-form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo del título del formulario */
+#contact-form-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Estilo para los párrafos de instrucciones */
+#contact-form-container p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Estilo para las etiquetas */
+#contact-form-container label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilo de los inputs y textarea */
+#contact-form-container input[type="text"],
+#contact-form-container input[type="email"],
+#contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Estilo del botón de envío */
+#contact-form-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color en el hover del botón */
+#contact-form-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el textarea */
+#contact-form-container textarea {
+    resize: vertical;
+    /* Permite redimensionar el textarea solo verticalmente */
+}
+
+/* Estilo para los campos requeridos */
+#contact-form-container input[required],
+#contact-form-container textarea[required] {
+    border-color: #f44336;
+    /* Rojo para los campos obligatorios */
+}
+
+/* Estilo general para los campos de entrada */
+#contact-form-container input,
+#contact-form-container textarea {
+    font-family: 'Arial', sans-serif;
+}

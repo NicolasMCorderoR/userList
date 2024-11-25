@@ -1,15 +1,17 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
     let users = JSON.parse(localStorage.getItem('users')) || [];
 
-    let userList = document.querySelector('#user-list');
+    let userLists = document.querySelector('#user-lists');
 
-    users.forEach(function(user){
+    // Recorrer los usuarios guardados en localStorage
+    users.forEach(function(user) {
         let listItem = document.createElement('li');
-        listItem.textContent = 'Nombre:' + user.name + ', Edad:' + user.age;
-        userList.appendChild(listItem);
+        listItem.textContent = 'Nombre: ' + user.name + ', Correo electrónico: ' + user.email + ', Mensaje: ' + user.message;
+        userLists.appendChild(listItem);  // Aquí se corrigió el nombre de la variable de "userList" a "userLists"
     });
 
-    document.querySelector('#button-return').addEventListener('click', function(){
+    // Volver a la página de inicio
+    document.querySelector('#button-return').addEventListener('click', function() {
         window.location.href = 'index.html';
     });
 });
