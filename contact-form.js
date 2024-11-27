@@ -28,6 +28,8 @@ document.querySelector("#contact-form").addEventListener("submit", function (eve
   localStorage.setItem("hasSubscribed", "true");
 
   BUTTON_VIEW_CONTACT.disabled = false;
+
+  document.querySelector("#contact-form").reset();
 });
 
 BUTTON_VIEW_CONTACT.addEventListener("click", function () {
